@@ -1,0 +1,27 @@
+# Core runtime dependencies (Python 3.11+)
+pandas>=2.1,<3.0
+numpy>=1.26,<3.0
+scikit-learn>=1.4
+matplotlib>=3.8
+plotly>=5.20
+python-dotenv>=1.0
+requests>=2.31
+vaderSentiment>=3.3.2
+yfinance>=0.2.40
+
+# Tests
+pytest>=8.0
+
+# --- Optional extras -------------------------------------------------------
+# Stronger gradient boosting model. The pipeline falls back to
+# HistGradientBoostingRegressor when this is missing.
+xgboost>=2.0
+
+# PDF rendering of the evaluation report. The Markdown report is always
+# produced; the PDF step is skipped with a warning when this is absent.
+reportlab>=4.1
+
+# FinBERT sentiment backend (SENTIMENT_BACKEND=finbert). VADER is the default
+# and requires nothing extra, so leave these commented out unless you need it.
+# transformers>=4.40
+# torch>=2.2

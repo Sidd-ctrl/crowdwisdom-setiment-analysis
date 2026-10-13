@@ -1,0 +1,45 @@
+# Credentials
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+apify_token*
+secrets.*
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.eggs/
+.venv/
+venv/
+env/
+.python-version
+
+# Test / tooling caches
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# Data and generated artefacts (regenerate with `python app.py demo`)
+data/*.sqlite3
+data/*.sqlite3-journal
+data/raw/*
+data/processed/*
+outputs/forecasts/*
+outputs/charts/*
+outputs/reports/*
+!data/raw/.gitkeep
+!data/processed/.gitkeep
+!outputs/forecasts/.gitkeep
+!outputs/charts/.gitkeep
+!outputs/reports/.gitkeep
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
